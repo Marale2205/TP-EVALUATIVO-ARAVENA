@@ -5,7 +5,8 @@ import { InicioRoutingModule } from './inicio-routing.module';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+  ],
   imports: [
     CommonModule,
     InicioRoutingModule

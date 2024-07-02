@@ -1,0 +1,15 @@
+@media (min-width:300px) and (max-width:700px){
+    mat-toolbal{
+        background-color:darkkhaki;
+      
+      }
+}
+      @media(min-width:700px){
+        mat-toolbar{
+          background-color:rosybrown;
+        }
+    
+}
+#menu{
+    justify-content: right;
+}
