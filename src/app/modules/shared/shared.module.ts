@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 //Angular Material 
-import {Component} from '@angular/core';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { FooterComponent } from './component/footer/footer.component';
@@ -9,6 +8,7 @@ import { FooterComponent } from './component/footer/footer.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 
 @NgModule({
@@ -23,7 +23,7 @@ import {MatMenuModule} from '@angular/material/menu';
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
-    Component
+    AppRoutingModule
   ],
   exports:[
     NavbarComponent,
@@ -32,7 +32,7 @@ import {MatMenuModule} from '@angular/material/menu';
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
-    Component
+
   ]
 })
 export class SharedModule { }

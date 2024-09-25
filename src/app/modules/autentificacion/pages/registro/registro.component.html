@@ -1,1 +1,32 @@
-<p>registro works!</p>
+<div class="container">
+    <div class="row">
+        <mat-form-field appearance="fill">
+            <mat-label>Ingrese su Nombre</mat-label>
+            <input matInput placeholder="Eje:Mateo">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Ingrese su Apellido</mat-label>
+            <input matInput placeholder="Eje:Fernandez">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Ingrese su Gmail</mat-label>
+            <input matInput placeholder="Eje:MatFer@Gmail.com">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Ingrese su Contraseña</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" />
+            <button
+              mat-icon-button
+              matSuffix
+              (click)="hide=!hide"
+              [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide"
+            >
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+    </div>
+</div>
+
+   
+  

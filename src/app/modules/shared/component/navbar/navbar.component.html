@@ -44,28 +44,42 @@
 
 <!--Metrial Angular -->
 <mat-toolbar>
-  <div class="col-lg-4">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <span>My App</span>
-    <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>favorite</mat-icon>
-    </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-      <mat-icon>share</mat-icon>
-    </button>
+  <!--Menu con -->
+  <button class="boton-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+    aria-controls="offcanvasScrolling"><mat-icon>menu</mat-icon></button>
+
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Try scrolling the rest of the page to see this option in action.</p>
+    </div>
   </div>
-  <div class="col-lg-4">
-  </div>
-  <div class="col-lg-4 menu">
-    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+
+  <span class="example-spacer"></span>
+  <img id="ima" src="../../../../../assets/imagenes/Logo.png">
+  <!--Inicio Sesio para el usuario-->
+ 
+
+
+
+  <span class="example-spacer"></span>
+  <button mat-icon-button [matMenuTriggerFor]="menu" class="botoni"><mat-icon>person</mat-icon></button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item>Registro</button>
-    <button mat-menu-item>InicioSessión</button>
+    <button mat-menu-item routerLink="/Registro">Registro</button>
+    <button mat-menu-item routerLink="/InicioSessión">InicioSessión</button>
   </mat-menu>
-  </div>
+
+
+  <button mat-icon-button class="botoni" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="botoni" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
 </mat-toolbar>
-
-
+<span class="example-spacer"></span>
+<img src="../../../../../assets/imagenes/card.png" width="100px" alt="">
