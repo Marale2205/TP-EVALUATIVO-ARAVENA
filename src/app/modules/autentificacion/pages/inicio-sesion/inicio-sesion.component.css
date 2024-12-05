@@ -1,0 +1,17 @@
+#contenedor{
+    display: flex;
+}
+#mail{
+    width:50px;
+  
+    border-radius: 100px;
+}
+.form{
+    justify-content: center;
+    text-align: center;
+    padding:1rem;
+}
+input, label{
+    display: inline-block;
+    width: 5rem;
+}

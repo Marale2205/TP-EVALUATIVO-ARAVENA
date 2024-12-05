@@ -1,0 +1,11 @@
+.example-card {
+    display: flex;
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image:'../../../../../assets/imagenes/Logo.png';
+    background-size: cover;
+  }
+
+  

@@ -9,8 +9,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
 import { AppRoutingModule } from 'src/app/app-routing.module';
-
-
+import {MatCardModule} from '@angular/material/card';
 @NgModule({
   declarations: [
     //DECLARAMOS EL NAVBAR Y EL FOOTER
@@ -23,7 +22,8 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatCardModule
   ],
   exports:[
     NavbarComponent,
@@ -32,6 +32,7 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
+    MatCardModule
 
   ]
 })

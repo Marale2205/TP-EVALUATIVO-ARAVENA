@@ -1,85 +1,56 @@
-<!--Boostrap-->
-<!--
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+  <!--Metrial Angular -->
+  <mat-toolbar>
+    <!--menu despegable con Boostrapt -->
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+      aria-controls="offcanvasWithBothOptions">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
+      </div>
+      <div class="offcanvas-body">
+        <button mat-raised-button routerLink="/invierno">Invierno</button>
+
+        <button mat-raised-button routerLink="/otono">Otono</button>
+
+        <button mat-raised-button routerLink="/primavera">Primavera</button>
+
+        <button mat-raised-button routerLink="/verano">Verano</button>
+
+        <button mat-raised-button routerLink="/elegante">Elegante</button>
+
+        <button mat-raised-button routerLink="/urbano">Urbano</button>
       </div>
     </div>
-  </nav>
--->
-<!--Angular Material
-<mat-toolbar>
-  <span>My Application</span>
-</mat-toolbar>-->
 
-<!--Metrial Angular -->
-<mat-toolbar>
-  <!--Menu con -->
-  <button class="boton-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
-    aria-controls="offcanvasScrolling"><mat-icon>menu</mat-icon></button>
+    <button mat-icon-button class="botoni" routerLink="/Inicio">
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+    </button>
+    <span class="example-spacer"></span>
+    <img id="ima" routerLink="/Inicio" routerLinkActive="router-link-active"
+      src="../../../../../assets/imagenes/Logo.png">
 
-  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <p>Try scrolling the rest of the page to see this option in action.</p>
-    </div>
-  </div>
+    <!--Inicio Sesio para el usuario-->
 
-  <span class="example-spacer"></span>
-  <img id="ima" src="../../../../../assets/imagenes/Logo.png">
-  <!--Inicio Sesio para el usuario-->
+
+
+    <span class="example-spacer"></span>
+    <button mat-icon-button [matMenuTriggerFor]="menu" class="botoni">
+      <mat-icon>person</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/Registro">Registro</button>
+      <button mat-menu-item routerLink="/InicioSessión">InicioSessión</button>
+    </mat-menu>
+
+
+    <button mat-icon-button class="botoni" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="botoni" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
  
-
-
-
-  <span class="example-spacer"></span>
-  <button mat-icon-button [matMenuTriggerFor]="menu" class="botoni"><mat-icon>person</mat-icon></button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item routerLink="/Registro">Registro</button>
-    <button mat-menu-item routerLink="/InicioSessión">InicioSessión</button>
-  </mat-menu>
-
-
-  <button mat-icon-button class="botoni" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button class="botoni" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button>
-</mat-toolbar>
-<span class="example-spacer"></span>
-<img src="../../../../../assets/imagenes/card.png" width="100px" alt="">

@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ajusta el ancho mínimo */
+    gap: 10px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+/* Media query para pantallas de móvil */
+@media (max-width: 600px) {
+    .row {
+        grid-template-columns: 1fr; /* Una sola columna para apilar las imágenes */
+    }
+
+    .card-img-top {
+        width: 80%; /* Ajusta el ancho de la imagen para que no ocupe todo el ancho */
+        margin: 0 auto; /* Centra las imágenes */
+    }
+}
