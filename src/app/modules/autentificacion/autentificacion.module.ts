@@ -6,14 +6,14 @@ import { AutentificacionRoutingModule } from './autentificacion-routing.module';
 import { InicioSesionComponent } from './pages/inicio-sesion/inicio-sesion.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 //Angular Material
-import {MatButtonModule} from '@angular/material/button';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatIconModule} from '@angular/material/icon';
-import {MatInputModule} from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
-  RegistroComponent,
+    RegistroComponent,
     InicioSesionComponent
   ],
   imports: [
@@ -25,7 +25,7 @@ import {MatInputModule} from '@angular/material/input';
     MatInputModule,
 
   ],
-  exports:[
+  exports: [
     RegistroComponent,
     InicioSesionComponent,
     MatButtonModule,

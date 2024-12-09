@@ -1,14 +1,25 @@
-@media (min-width:500px) and (max-width:900px){
+@media (min-width: 500px) and (max-width: 900px) {
+  .invierno {
+      width: 150px;
+      height: 150px;
+  }
 
+  button {
+      font-size: 1rem;
+  }
+
+  .boton-menu {
+      margin: 5px;
+  }
+
+  mat-toolbar {
+      padding: 0 20px;
+  }
 }
 
-@media(min-width:700px){
-        
-    
-}
 
 mat-toolbar{
-  background-color:#e9e3dc;
+  background-color:#907761;
 }
 
 
@@ -18,12 +29,48 @@ mat-toolbar{
 }
 
 button{
-  background-color: #e9e3dc;
+  background-color:#907761;
 }
 
 .boton-menu{
   margin: 0;
-  border-color: #e9e3dc;
+  border-color: #907761;
+}
+.invierno{
+  width: 100px;
+  height: 100px;
+}
+
+#ima{
+  cursor: pointer;
+}
+
+.offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espacio entre botones */
+  padding: 20px;
+  background-color: #f2e8e1; /* Color de fondo */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  border-radius: 8px; /* Bordes redondeados para un diseño suave */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+.offcanvas-body button {
+  width: 100%; /* Botones ocupan todo el ancho del contenedor */
+  padding: 12px;
+  background-color: #ffffff; /* Fondo blanco para contraste */
+  color: #333333; /* Color del texto */
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Efecto de transición */
+  box-shadow: 0px 2px 4px rgba(251, 251, 251, 0.1); /* Sombra para el botón */
+}
+
+.offcanvas-body button:hover {
+  background-color: #e0d3c7; /* Color de fondo al pasar el ratón */
 }
 
 
