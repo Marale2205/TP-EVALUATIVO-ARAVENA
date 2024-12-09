@@ -2,19 +2,19 @@
     <div class="row">
         <mat-form-field appearance="fill">
             <mat-label>Ingrese su Nombre:</mat-label>
-            <input matInput placeholder="Eje:Mateo">
+            <input [(ngModel)]="usuarios.nombre" matInput placeholder="Eje:Mateo" required>
           </mat-form-field>
           <mat-form-field appearance="fill">
             <mat-label>Ingrese su Apellido:</mat-label>
-            <input matInput placeholder="Eje:Fernandez">
+            <input [(ngModel)]="usuarios.apellido"matInput placeholder="Eje:Fernandez" required>
           </mat-form-field>
           <mat-form-field appearance="fill">
             <mat-label>Ingrese su Gmail:</mat-label>
-            <input matInput placeholder="Eje:MatFer@Gmail.com">
+            <input [(ngModel)]="usuarios.email" matInput placeholder="Eje:MatFer@Gmail.com" required>
           </mat-form-field>
           <mat-form-field>
             <mat-label>Ingrese su Contraseña:</mat-label>
-            <input matInput [type]="hide ? 'password' : 'text'" />
+            <input [(ngModel)]="usuarios.password" matInput [type]="hide ? 'password' : 'text'" required>
             <button
               mat-icon-button
               matSuffix
@@ -25,7 +25,7 @@
               <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
           </mat-form-field>
-          <button type="button" class="btn btn-outline-dark">Guardar</button>
+          <button type="button" class="btn btn-outline-dark" (click)="registrar()">Registrarce</button>
     </div>
 </div>
 
