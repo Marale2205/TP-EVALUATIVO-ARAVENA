@@ -3,9 +3,18 @@ img{
     height: 500px;
 }
 .container{
-    justify-content: center;
     display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
+
+.carousel-inner{
+    align-items: center;
+    justify-content: center;
+}
+
 @media (max-width: 600px) {
     .container {
         justify-content: center;

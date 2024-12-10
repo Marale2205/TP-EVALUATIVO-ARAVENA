@@ -58,7 +58,7 @@ export class RegistroComponent {
       });
 
       // el método NAVIGATE nos redirecciona a otra vista
-      this.servicioRutas.navigate(['/inicio']);
+      this.servicioRutas.navigate(['/Inicio']);
     })
     // el método CATCH captura una falla y la vuelve un error cuando la promesa salga mal
     .catch(error => {

@@ -99,7 +99,7 @@ export class InicioSesionComponent {
             console.log("Inicio de visitante");
 
             // Si es otro tipo de usuario, redirecciona al "inicio"
-            this.servicioRutas.navigate(['/inicio']);
+            this.servicioRutas.navigate(['/Inicio']);
           }
         })
         .catch(err => {
