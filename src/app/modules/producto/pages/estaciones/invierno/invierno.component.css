@@ -1,5 +1,6 @@
 .example-card {
     display: flex;
+    justify-content: center;
     max-width: 300px;
   }
   
@@ -7,5 +8,4 @@
     background-image:'../../../../../assets/imagenes/Logo.png';
     background-size: cover;
   }
-
   

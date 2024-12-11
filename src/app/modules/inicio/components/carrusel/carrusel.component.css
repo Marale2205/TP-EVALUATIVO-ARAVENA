@@ -10,8 +10,7 @@ img{
     padding-bottom: 2rem;
 }
 
-.carousel-inner{
-    align-items: center;
+.carousel-item{
     justify-content: center;
 }
 

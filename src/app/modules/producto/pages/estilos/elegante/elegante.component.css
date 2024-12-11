@@ -1,0 +1,17 @@
+ /* Estilos para centrar el mensaje en la pantalla */
+ body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-size: 5rem; /* Tamaño grande */
+    color: #000000;  /* Rojo para indicar advertencia */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}

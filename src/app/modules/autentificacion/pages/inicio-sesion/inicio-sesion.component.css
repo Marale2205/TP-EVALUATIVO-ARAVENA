@@ -1,17 +1,28 @@
-#contenedor{
+.container-fluid{
     display: flex;
+    margin: 0;
+    justify-content: center;
+    padding: 1rem;
 }
-#mail{
-    width:50px;
-  
-    border-radius: 100px;
-}
+
 .form{
     justify-content: center;
     text-align: center;
-    padding:1rem;
+    
 }
-input, label{
-    display: inline-block;
-    width: 5rem;
+.row{
+    display: flex;
+    justify-content: center;
 }
+mat-form-field{
+    display: block;
+}
+.btn{
+    text-align: center;
+    width: 10rem;
+}
+
+icon{
+    align-items: center;
+}
+  

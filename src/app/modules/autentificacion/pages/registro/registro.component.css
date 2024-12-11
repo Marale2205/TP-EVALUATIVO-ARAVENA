@@ -1,0 +1,23 @@
+.container-fluid{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.form{
+    justify-content: center;
+    text-align: center;
+    
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+mat-form-field{
+    display: block;
+}
+.btn{
+    text-align: center;
+    width: 10rem;
+}

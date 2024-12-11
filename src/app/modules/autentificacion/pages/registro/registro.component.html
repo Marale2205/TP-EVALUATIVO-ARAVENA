@@ -1,31 +1,34 @@
-<div class="container">
+<mat-icon>account_circle</mat-icon>
+<div class="container-fluid">
     <div class="row">
+       <div class="form">
         <mat-form-field appearance="fill">
-            <mat-label>Ingrese su Nombre:</mat-label>
-            <input [(ngModel)]="usuarios.nombre" matInput placeholder="Eje:Mateo" required>
-          </mat-form-field>
-          <mat-form-field appearance="fill">
-            <mat-label>Ingrese su Apellido:</mat-label>
-            <input [(ngModel)]="usuarios.apellido"matInput placeholder="Eje:Fernandez" required>
-          </mat-form-field>
-          <mat-form-field appearance="fill">
-            <mat-label>Ingrese su Gmail:</mat-label>
-            <input [(ngModel)]="usuarios.email" matInput placeholder="Eje:MatFer@Gmail.com" required>
-          </mat-form-field>
-          <mat-form-field>
-            <mat-label>Ingrese su Contraseña:</mat-label>
-            <input [(ngModel)]="usuarios.password" matInput [type]="hide ? 'password' : 'text'" required>
-            <button
-              mat-icon-button
-              matSuffix
-              (click)="hide=!hide"
-              [attr.aria-label]="'Hide password'"
-              [attr.aria-pressed]="hide"
-            >
-              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-            </button>
-          </mat-form-field>
-          <button type="button" class="btn btn-outline-dark" (click)="registrar()">Registrarce</button>
+          <mat-label>Ingrese su Nombre:</mat-label>
+          <input [(ngModel)]="usuarios.nombre" matInput placeholder="Eje:Mateo" required>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Ingrese su Apellido:</mat-label>
+          <input [(ngModel)]="usuarios.apellido"matInput placeholder="Eje:Fernandez" required>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Ingrese su Gmail:</mat-label>
+          <input [(ngModel)]="usuarios.email" matInput placeholder="Eje:MatFer@Gmail.com" required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Ingrese su Contraseña:</mat-label>
+          <input [(ngModel)]="usuarios.password" matInput [type]="hide ? 'password' : 'text'" required>
+          <button
+            mat-icon-button
+            matSuffix
+            (click)="hide=!hide"
+            [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide"
+          >
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+       </div>
+          <button type="button" class="btn btn-outline-dark" (click)="registrar()">Registrarse</button>
     </div>
 </div>
 

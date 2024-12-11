@@ -4,3 +4,11 @@
 #a{
     background-color: #463623;
 }
+.card {
+    text-align: center;
+    color: aliceblue;
+}
+.card-footer{
+    text-align: center;
+    color: aliceblue;
+}

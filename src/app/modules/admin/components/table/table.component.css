@@ -1,0 +1,18 @@
+.modal-footer{
+    text-align: center;
+    justify-content: center;
+}
+
+button{
+    margin: 1rem;
+}
+.btn-edi{
+    background-color: rgba(240, 255, 255, 0.219);
+    color:#4b1409;
+    border-color:#4b1409;
+} 
+.btn-edi:hover{
+    background-color:#4b1409;
+    color: azure;
+    border-color: azure;
+}

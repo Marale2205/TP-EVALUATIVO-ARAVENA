@@ -73,4 +73,12 @@ button{
   background-color: #e0d3c7; /* Color de fondo al pasar el ratón */
 }
 
+/* Cambiar el color de fondo a marrón oscuro */
+.btn-custom {
+  background-color: #5A3D29; /* Marrón oscuro */
+  border: none; /* Eliminar el borde predeterminado */
+  color: white; /* Texto en blanco */
+  transition: all 0.3s ease; /* Transición suave para efectos */
+  padding: 10px 20px; /* Espaciado del botón */
+}
 
