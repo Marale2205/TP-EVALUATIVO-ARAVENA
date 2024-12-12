@@ -12,6 +12,7 @@ import { PrimaveraComponent } from './pages/estaciones/primavera/primavera.compo
 //ANGULAR MATERIAL  
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import{CardInviernoComponent} from '../producto/components/card-invierno/card-invierno.component'
 @NgModule({
   declarations: [
     EleganteComponent,
@@ -20,6 +21,7 @@ import {MatButtonModule} from '@angular/material/button';
     VeranoComponent,
     UrbanoComponent,
     PrimaveraComponent,
+    CardInviernoComponent
   ],
   imports: [
     CommonModule,
@@ -38,7 +40,8 @@ import {MatButtonModule} from '@angular/material/button';
     VeranoComponent,
     PrimaveraComponent,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    CardInviernoComponent
   ]
 })
 export class ProductoModule { }

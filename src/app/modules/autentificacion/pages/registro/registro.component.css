@@ -21,3 +21,8 @@ mat-form-field{
     text-align: center;
     width: 10rem;
 }
+
+.bi{
+    width: 6rem;
+    padding: 1.5rem;
+}

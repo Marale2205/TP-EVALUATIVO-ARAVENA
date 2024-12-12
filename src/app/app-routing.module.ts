@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from './modules/inicio/pages/inicio/inicio.component';
+import { rutaProtegidaGuard } from './guards/ruta-protegida.guard';
 
 const routes: Routes = [
   {
@@ -22,7 +23,10 @@ const routes: Routes = [
     path:"",loadChildren:()=> import('./modules/carrito/carrito.module').then(m=>m.CarritoModule)
   },
   {
-    path:"",loadChildren:()=> import('./modules/admin/admin.module').then(m=>m.AdminModule)
+    path:"",loadChildren:()=> import('./modules/admin/admin.module').then(m=>m.AdminModule),
+    
+    // Definimos al guardian que proteja la ruta de Admin y que espere un rol de tipo "admin"
+    canActivate:[rutaProtegidaGuard],data:{rol:'admin'}
   }
 ];
 

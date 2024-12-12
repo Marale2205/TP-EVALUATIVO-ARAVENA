@@ -22,7 +22,10 @@ mat-form-field{
     width: 10rem;
 }
 
-icon{
-    align-items: center;
+
+.bi{
+    width: 6rem;
+    padding: 1.5rem;
 }
+
   

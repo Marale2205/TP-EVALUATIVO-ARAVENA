@@ -12,12 +12,14 @@ import { SharedModule } from './modules/shared/shared.module';
 import { environment } from '../environments/environment'; // vincula a la BD con la APP
 import { AngularFireModule } from '@angular/fire/compat'; // trabaja con las colecciones de información
 import { AngularFireAuthModule } from '@angular/fire/compat/auth'; // trabaja con la autentificación
-import { AngularFireStorageModule } from '@angular/fire/compat/storage'; // trabaja con imágenes y archivos
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    
   ],
   imports: [
     BrowserModule,

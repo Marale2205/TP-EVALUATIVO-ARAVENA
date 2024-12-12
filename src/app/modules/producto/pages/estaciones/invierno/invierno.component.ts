@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./invierno.component.css']
 })
 export class InviernoComponent {
-mensajeReparacion(){
-  alert("¡En reparacion!")
-}
+  mensajeReparacion() {
+    alert("¡En reparacion!")
+  }
 }

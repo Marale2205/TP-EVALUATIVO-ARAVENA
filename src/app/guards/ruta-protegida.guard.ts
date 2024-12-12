@@ -43,7 +43,7 @@ export const rutaProtegidaGuard: CanActivateFn = (route, state) => {
 
         // Redireccionamos acceso a inicio para usuarios no validados
         // Usuario sin permiso: Visitante o NO registrado
-        return of(servicioRutas.createUrlTree(['/inicio']));
+        return of(servicioRutas.createUrlTree(['/Inicio']));
       }
     })
   )
